@@ -12,8 +12,8 @@ body {
 }
 
 div.container {
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 90vh;
+    
     border: 3px dashed rgb(0, 191, 255);
 
     display: grid;
@@ -27,7 +27,7 @@ div.container {
 
 header {
     grid-area: 1 / 1 / 2 / -1;
-    background: #ffead2 url(../img/pexels-enginakyurt-2282532.jpg)  center center no-repeat ;
+    /* background: #ffead2 url(../img/pexels-enginakyurt-2282532.jpg)  center center no-repeat ; */
     background-size: cover;
 }
 
@@ -41,17 +41,72 @@ nav {
     background-color: #703513 ;
     border-radius: 10px ;
     height: 30px;
-    min-width: 100px;
+    min-width: 70px;
     text-align: center;
     color: #ffead2;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.434);
+    cursor: pointer;
+}
+
+nav > div > p {
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.356)  ;
 }
 
 .menu:hover {
-    background-color: #ffead2;
+    background-color: #ffc98b;
     color: #703513;
     transition: .5s;
 }
 
 main {
+    height: 90vh;
     grid-area: 3 / 1 / -1 / -1;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px 1fr 50px;
+    grid-template-columns: 20px 1fr 1fr 20px ;
+    gap: 20px;
+  /*  grid-template: 40px 10px 100px 100px 50px 40px 10px 10px 100px 100px 50px 40px 40px / 20px 10px 2fr repeat(3 , 10px) 2fr 10px 20px; */
 }
+
+section {
+    background-color: #703513;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color:  #fbe1a4;
+    justify-content: space-between;
+}
+
+section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px ;
+    align-self: center;
+    
+}
+
+.colosso {
+    grid-area: 2 / 2 / 3 / 3 ;
+}
+
+.colossinho {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.monstruoso {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.frango-simples {
+    grid-area: 4 / 3/ 5 / 4;
+}
+
+.buy {
+    background-color: #ffc98b;
+    color: #703513;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
