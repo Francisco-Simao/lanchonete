@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Anton', sans-serif; ;
+    
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
 div.container {
     min-height: 90vh;
-    
+    font-family:'Anton', sans-serif; ;
     border: 3px dashed rgb(0, 191, 255);
 
     display: grid;
@@ -74,7 +74,9 @@ section {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    color:  #fbe1a4;
+    color:  #fff0cc;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.528);
     justify-content: space-between;
 }
 
