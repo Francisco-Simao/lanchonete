@@ -4,31 +4,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     background-color: #ffead2;
+
+    width: 100%;
 }
 
 div.container {
-    min-height: 90vh;
+
+    width: 100%;
     font-family:'Anton', sans-serif; ;
     border: 3px dashed rgb(0, 191, 255);
 
     display: grid;
-    grid-template: 1fr 50px 50px 1fr 100px / auto ;
+    grid-template: 500px 50px  1fr 100px  / 100% ;
     /* 1fr 50px 50px 1fr 100px / 10px 1fr 20px 1fr 10px */
 }
 
 .item {
-    border: 2px dashed rgb(0, 239, 0);
+    border: 2px dashed rgb(239, 0, 0);
 }
 
 header {
     grid-area: 1 / 1 / 2 / -1;
     /* background: #ffead2 url(../img/pexels-enginakyurt-2282532.jpg)  center center no-repeat ; */
-    background-size: cover;
 }
 
 nav {
@@ -41,7 +42,7 @@ nav {
     background-color: #703513 ;
     border-radius: 10px ;
     height: 30px;
-    min-width: 70px;
+    width: 70px;
     text-align: center;
     color: #ffead2;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.434);
@@ -58,21 +59,20 @@ nav > div > p {
     transition: .5s;
 }
 
-main {
+article#lanches {
     height: 90vh;
     grid-area: 3 / 1 / -1 / -1;
     display: grid;
     grid-template-rows: 50px 1fr 50px 1fr 50px;
     grid-template-columns: 20px 1fr 1fr 20px ;
     gap: 20px;
-  /*  grid-template: 40px 10px 100px 100px 50px 40px 10px 10px 100px 100px 50px 40px 40px / 20px 10px 2fr repeat(3 , 10px) 2fr 10px 20px; */
 }
 
-section {
+article#lanches > section {
     background-color: #703513;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column ;
     padding: 10px;
     color:  #fff0cc;
     font-family: "Oswald", sans-serif;
@@ -80,8 +80,8 @@ section {
     justify-content: space-between;
 }
 
-section img {
-    width: 120px;
+article#lanches >  section img {
+    min-width: 120px;
     height: 120px;
     border-radius: 10px ;
     align-self: center;
@@ -104,11 +104,137 @@ section img {
     grid-area: 4 / 3/ 5 / 4;
 }
 
-.buy {
+.buy  {
     background-color: #ffc98b;
     color: #703513;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
+}
+
+.buy:hover {
+    background-color:#381b0a;
+    color: #ffc98b;
+    transition: background-color .5s;
+}
+
+
+article#bebidas {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px 1fr 50px;
+    grid-template-columns: 20px 1fr 1fr 20px ;
+    gap: 20px;
+    height: 95vh;
+
+     
     
+    color: #ffc98b;
+    font-family: "Oswald", sans-serif;
+}
+
+
+article#bebidas > section{
+    display: flex;
+    flex-flow: column;
+    padding: 10px ;
+    justify-content: space-between;
+    background-color: #2c1e1b;
+
+
+    border: 1px dashed green;
+    border-radius: 20px;
+}
+
+article#bebidas > section img {
+    height: 150px;
+    width: 120px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.chisquito {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.marguerita {
+    grid-area: 2 / 3 / 3 / 4;;
+}
+
+.isco { 
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.pendo { 
+    grid-area: 4 / 3/ 5 / 4;
+}
+
+.comprar {
+    background-color: #703513;
+
+    border-radius:10px ;
+    text-align: center;
+    color: #ffc98b;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background-color: #ffc98b;
+    color: #2c1e1b;
+    transition: background-color , color .5s;
+}
+
+footer {
+    background-color: #381b0a;
+    height: 50vh;
+    width: 100%;
+    font-size: 1.1em;
+    color: white;
+    display: grid;
+    grid: 50px 60px 1fr 50px 1fr / 50px 1fr 50px; 
+    font-family: "Oswald", sans-serif;
+    border: 4px rgb(255, 0, 0);
+
+}
+
+footer > div {
+
+    border: 3px dashed green;
+}
+
+.ham {
+    border: 3px dashed rgb(128, 0, 0);
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.tex {
+    border: 3px dashed green;
+    grid-area: 3 / 2 / 4 / 3;
+    
+}
+
+.con {
+    border: 3px dashed rgb(62, 0, 128);
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.con {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    color: white;
+}
+.con > a:hover {
+    color: #ffc98b;
+    transition: color .4s;
+}
+
+i {
+    font-size: 3em;
 }
 
