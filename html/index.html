@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LANCHONETE-PROJ</title>
     <link rel="stylesheet" href="../sty/style.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="../sty/media.css" media= "screen and (min-width: 768px) and (max-width : 991px )">
+
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,100 +18,129 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="item">
-        </header>
-        <nav class="item">
-            <div class="lanches menu">
-                <p>LANCHE</p>
-            </div>
-            <div class="bebidas menu">
-                <p>BEBIDAS</p>
-            </div>
-            <div class="contato menu">
-                <p>CONTATO</p>
-            </div>
-        </nav>
-        <main class="item">
-            <article id="lanches">
-                <section class="colosso">
-                    <img src="../img/x-colosso.jpg" alt="imagem ilustrativa do lanche">
-                    <h1>X-COLOSSO</h1>
-                    <p>PAO AUSTRALIANO - HAMBURGUER - SALADA - MAIONESE - CHEDDAR - PRESUNTO</p>
-                    <div class="buy">
-                        <p>COMPRAR</p>
-                    </div>
-                </section>
-                <section class="colossinho">
-                    <img src="../img/x-colossinho.jpg" alt="imagem ilustrativa do lanche">
-                    <h1>X-COLOSSINHO</h1>
-                    <p>PAO ITALIANO - 20G PICANHA - SALADA - CEBOLA - CHEDDAR </p>
-                    <div class="buy">
-                        <p>COMPRAR</p>
-                    </div>
-                </section>
-                <section class="monstruoso">
-                    <img src="../img/x-monstruoso.jpg " alt="imagem ilustrativa do lanche">
-                    <h1>X-COLOSSINHO</h1>
-                    <p>PAO ITALIANO - 250G PICANHA - SALADA - CEBOLA - CHEDDAR - MUITO BACON</p>
-                    <div class="buy">
-                        <p>COMPRAR</p>
-                    </div>
-                </section>
-                <section class="frango-simples">
-                    <img src="../img/x-frango simples.jpg " alt="imagem ilustrativa do lanche">
-                    <h1>X-FRANGO SIMLES</h1>
-                    <p>PAO INTEGRAL - FRANGO - SALADA - CEBOLA - CHEDDAR </p>
-                    <div class="buy">
-                        <p>COMPRAR</p>
-                    </div>
-                </section>
-            </article>
-            <article id="bebidas">
-                <section class="chisquito">
-                    <img src="../img/pexels-18393328-6469041.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
-                    <div>
-                        <h1>CHISQUITO</h1>
-                        <p>UMA BEBIDA ORIGINÁRIA DO PERU - CAMPAGNE COM FRUTAS</p>
-                    </div>
-                    <div class="comprar">
-                        COMPRAR
-                    </div>
-                </section>
-                <section class="marguerita">
-                    <img src="../img/pexels-daroon-31057722.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
-                    <div>
-                        <h1>MARGUERITA</h1>
-                        <p>UMA BEBIDA ORIGINÁRIA DO CHILE - CACHAÇA COM VODKA</p>
-                    </div>
-                    <div class="comprar">
-                        COMPRAR
-                    </div>
-                </section>
-                <section class="isco">
-                    <img src="../img/pexels-pauline-raw-131148428-10622296.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
+    <header class="item">
+    </header>
+    <nav class="item" id="navbar">
+        <a href="#lanches" class="menu">LANCHE</a>
+        <a href="#bebidas" class="menu">DRINKS</a>        
+        <a href="#drinks" class="menu"> BEBIDAS</a>
+        <a href="#contato" class="menu">CONTATO</a>
 
-                    <h1>ISCO</h1>
-                    <p>UMA BEBIDA ORIGINÁRIA DA ESPANHA - GIN COM CANELA</p>
+    </nav>
+    <main class="item">
+        <article id="lanches">
+            <section class="colosso">
+                <img src="../img/x-colosso.jpg" alt="imagem ilustrativa do lanche">
+                <h1>X-COLOSSO</h1>
+                <p>PAO AUSTRALIANO - HAMBURGUER - SALADA - MAIONESE - CHEDDAR - PRESUNTO</p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="colossinho">
+                <img src="../img/x-colossinho.jpg" alt="imagem ilustrativa do lanche">
+                <h1>X-COLOSSINHO</h1>
+                <p>PAO ITALIANO - 20G PICANHA - SALADA - CEBOLA - CHEDDAR </p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="monstruoso">
+                <img src="../img/x-monstruoso.jpg " alt="imagem ilustrativa do lanche">
+                <h1>X-COLOSSINHO</h1>
+                <p>PAO ITALIANO - 250G PICANHA - SALADA - CEBOLA - CHEDDAR - MUITO BACON</p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="frango-simples">
+                <img src="../img/x-frango simples.jpg " alt="imagem ilustrativa do lanche">
+                <h1>X-FRANGO SIMLES</h1>
+                <p>PAO INTEGRAL - FRANGO - SALADA - CEBOLA - CHEDDAR </p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+        </article>
+        <article id="bebidas">
+            <section class="chisquito">
+                <img src="../img/pexels-18393328-6469041.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
+                <div>
+                    <h1>CHISQUITO</h1>
+                    <p>UMA BEBIDA ORIGINÁRIA DO PERU - CAMPAGNE COM FRUTAS</p>
+                </div>
+                <div class="comprar">
+                    COMPRAR
+                </div>
+            </section>
+            <section class="marguerita">
+                <img src="../img/pexels-daroon-31057722.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
+                <div>
+                    <h1>MARGUERITA</h1>
+                    <p>UMA BEBIDA ORIGINÁRIA DO CHILE - CACHAÇA COM VODKA</p>
+                </div>
+                <div class="comprar">
+                    COMPRAR
+                </div>
+            </section>
+            <section class="isco">
+                <img src="../img/pexels-pauline-raw-131148428-10622296.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
 
-                    <div class="comprar">
-                        COMPRAR
-                    </div>
-                </section>
-                <section class="pendo">
-                    <img src="../img/pexels-pinaki-panda-3019803-18401712.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
-                    <div>
-                        <h1>PENDO</h1>
-                        <p>UMA BEBIDA ORIGINÁRIA DO MEXICO - WHISKY COM VERMOUTH ROSSO</p>
-                    </div>
-                    <div class="comprar">
-                        COMPRAR
-                    </div>
-                </section>
-            </article>
-        </main>
-    </div>
-    <footer>
+                <h1>ISCO</h1>
+                <p>UMA BEBIDA ORIGINÁRIA DA ESPANHA - GIN COM CANELA</p>
+
+                <div class="comprar">
+                    COMPRAR
+                </div>
+            </section>
+            <section class="pendo">
+                <img src="../img/pexels-pinaki-panda-3019803-18401712.jpg" alt="IMAGEM ILUSTRATIVA DE UMA BEBIDA">
+                <div>
+                    <h1>PENDO</h1>
+                    <p>UMA BEBIDA ORIGINÁRIA DO MEXICO - WHISKY COM VERMOUTH ROSSO</p>
+                </div>
+                <div class="comprar">
+                    COMPRAR
+                </div>
+            </section>
+        </article>
+        <article id="lanches">
+            <section class="colosso drink">
+                <img src="../img/coca-cola.jpg" alt="imagem ilustrativa da coca-cola lata">
+                <h1>COCA-COLA</h1>
+                <p>600 ML - 2L</p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="colossinho drink" id="drinks">
+                <img src="../img/agua.jpg" alt="imagem ilustrativa da agua">
+                <h1>AGUA</h1>
+                <p> 500ML</p>
+                </p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="monstruoso drink ">
+                <img src="../img/pepsi.jpg " alt="imagem ilustrativa da pepsi">
+                <h1>PEPSI</h1>
+                <p>DIET - 600ML - 2L - NORMAL - 600ML - 2L</p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+            <section class="frango-simples drink">
+                <img src="../img/red-bull.jpg" alt="imagem ilustrativa da red-bull em lata">
+                <h1>RED-BULL</h1>
+                <p>500ML</p>
+                <div class="buy">
+                    <p>COMPRAR</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer id="contato">
         <div class="ham">
             <i class="fas fa-burger"></i>
             <p>LANCHONETE</p>
@@ -128,6 +159,18 @@
     </footer>
 
 
+    <script>
+        const navbar = document.getElementById("navbar");
+        const navTop = navbar.offsetTop;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY >= navTop) {
+                navbar.classList.add("fixed");
+            } else {
+                navbar.classList.remove("fixed");
+            }
+        });
+    </script>
 </body>
 
 </html>

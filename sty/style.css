@@ -8,24 +8,18 @@
 
 body {
     background-color: #ffead2;
-
+    font-family: "Oswald", sans-serif;
     width: 100%;
 }
 
-div.container {
-
-    width: 100%;
-    font-family:'Anton', sans-serif; ;
-    border: 3px dashed rgb(0, 191, 255);
-
-    display: grid;
-    grid-template: 500px 50px  1fr 100px  / 100% ;
-    /* 1fr 50px 50px 1fr 100px / 10px 1fr 20px 1fr 10px */
+html {
+    scroll-behavior: smooth
 }
 
-.item {
-    border: 2px dashed rgb(239, 0, 0);
+header {
+    height: 40vh;
 }
+
 
 header {
     grid-area: 1 / 1 / 2 / -1;
@@ -36,21 +30,25 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    background: #2c1e1b;
 }
 
 .menu {
-    background-color: #703513 ;
-    border-radius: 10px ;
+    background-color: #703513;
+    border-radius: 10px;
     height: 30px;
-    width: 70px;
+    padding: 0px 10px;
+    margin: 10px;
     text-align: center;
     color: #ffead2;
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.434);
     cursor: pointer;
+    text-decoration: none;
 }
 
-nav > div > p {
-    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.356)  ;
+nav>div>p {
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.356);
 }
 
 .menu:hover {
@@ -64,32 +62,33 @@ article#lanches {
     grid-area: 3 / 1 / -1 / -1;
     display: grid;
     grid-template-rows: 50px 1fr 50px 1fr 50px;
-    grid-template-columns: 20px 1fr 1fr 20px ;
+    grid-template-columns: 20px 1fr 1fr 20px;
     gap: 20px;
 }
 
-article#lanches > section {
+article#lanches>section {
     background-color: #703513;
     border-radius: 20px;
     display: flex;
-    flex-flow: column ;
+    flex-flow: column;
     padding: 10px;
-    color:  #fff0cc;
+    color: #fff0cc;
     font-family: "Oswald", sans-serif;
     text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.528);
     justify-content: space-between;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.506);
 }
 
-article#lanches >  section img {
-    min-width: 120px;
+article#lanches>section img {
+    width: 120px;
     height: 120px;
-    border-radius: 10px ;
+    border-radius: 10px;
     align-self: center;
-    
+
 }
 
 .colosso {
-    grid-area: 2 / 2 / 3 / 3 ;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .colossinho {
@@ -104,7 +103,7 @@ article#lanches >  section img {
     grid-area: 4 / 3/ 5 / 4;
 }
 
-.buy  {
+.buy {
     background-color: #ffc98b;
     color: #703513;
     border-radius: 10px;
@@ -113,7 +112,7 @@ article#lanches >  section img {
 }
 
 .buy:hover {
-    background-color:#381b0a;
+    background-color: #381b0a;
     color: #ffc98b;
     transition: background-color .5s;
 }
@@ -122,30 +121,26 @@ article#lanches >  section img {
 article#bebidas {
     display: grid;
     grid-template-rows: 50px 1fr 50px 1fr 50px;
-    grid-template-columns: 20px 1fr 1fr 20px ;
+    grid-template-columns: 20px 1fr 1fr 20px;
     gap: 20px;
     height: 95vh;
-
-     
-    
+    background-color: #503731;
     color: #ffc98b;
     font-family: "Oswald", sans-serif;
 }
 
 
-article#bebidas > section{
+article#bebidas>section {
     display: flex;
     flex-flow: column;
-    padding: 10px ;
+    padding: 10px;
     justify-content: space-between;
     background-color: #2c1e1b;
-
-
-    border: 1px dashed green;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.506);
     border-radius: 20px;
 }
 
-article#bebidas > section img {
+article#bebidas>section img {
     height: 150px;
     width: 120px;
     align-self: center;
@@ -157,21 +152,22 @@ article#bebidas > section img {
 }
 
 .marguerita {
-    grid-area: 2 / 3 / 3 / 4;;
+    grid-area: 2 / 3 / 3 / 4;
+    ;
 }
 
-.isco { 
+.isco {
     grid-area: 4 / 2 / 5 / 3;
 }
 
-.pendo { 
+.pendo {
     grid-area: 4 / 3/ 5 / 4;
 }
 
 .comprar {
     background-color: #703513;
 
-    border-radius:10px ;
+    border-radius: 10px;
     text-align: center;
     color: #ffc98b;
     cursor: pointer;
@@ -180,8 +176,10 @@ article#bebidas > section img {
 .comprar:hover {
     background-color: #ffc98b;
     color: #2c1e1b;
-    transition: background-color , color .5s;
+    transition: background-color, color .5s;
 }
+
+
 
 footer {
     background-color: #381b0a;
@@ -190,13 +188,12 @@ footer {
     font-size: 1.1em;
     color: white;
     display: grid;
-    grid: 50px 60px 1fr 50px 1fr / 50px 1fr 50px; 
+    grid: 50px 60px 1fr 50px 1fr / 50px 1fr 50px;
     font-family: "Oswald", sans-serif;
-    border: 4px rgb(255, 0, 0);
 
 }
 
-footer > div {
+footer>div {
 
     border: 3px dashed green;
 }
@@ -207,13 +204,13 @@ footer > div {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
 
 .tex {
     border: 3px dashed green;
     grid-area: 3 / 2 / 4 / 3;
-    
+
 }
 
 .con {
@@ -229,7 +226,8 @@ footer > div {
 a {
     color: white;
 }
-.con > a:hover {
+
+.con>a:hover {
     color: #ffc98b;
     transition: color .4s;
 }
@@ -238,3 +236,21 @@ i {
     font-size: 3em;
 }
 
+nav {
+    position: relative;
+    /* pode já ter */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    padding: 10px 0;
+    /* ajuste conforme quiser */
+}
+
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #703513;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+    z-index: 1000;
+}
